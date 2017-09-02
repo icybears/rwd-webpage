@@ -55,3 +55,59 @@ html {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
+
+/*----------BODY-------------*/
+body {
+  font-size: 16px;
+  font-family: "Encode Sans", sans-serif; }
+
+/*----------HEADER---------*/
+header {
+  padding: 3em 2em;
+  text-align: center;
+  background-color: #ef3e3e;
+  color: #2c2c2c; }
+  header h1 {
+    font-weight: 700;
+    font-size: 1.5em; }
+  header h2 {
+    font-weight: 300;
+    font-size: 1.1em; }
+
+/*-----------NAV---------*/
+nav {
+  padding: 0 2em;
+  background-color: #2c2c2c;
+  text-align: center; }
+  nav ul li {
+    float: left;
+    width: 33.33%; }
+    nav ul li a {
+      padding: .6em 0;
+      display: block;
+      color: #ef3e3e;
+      text-decoration: none;
+      transition: background-color .7s; }
+      nav ul li a:hover {
+        background-color: #1d1d1d; }
+      nav ul li a.active {
+        background-color: #131313; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+@media only screen and (min-width: 560px) {
+  /*--------------HEADER---------------*/
+  header {
+    text-align: left; } }
+@media only screen and (min-width: 1140px) {
+  /*------------NAV-------------*/
+  nav {
+    position: absolute;
+    top: 3em;
+    right: 2em;
+    border-radius: 99px; }
+    nav ul li {
+      width: 5em; } }

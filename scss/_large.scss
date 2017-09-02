@@ -1,0 +1,10 @@
+/*------------NAV-------------*/
+nav{
+    position: absolute;
+    top:3em;
+    right:$gutter;
+    border-radius:99px;
+    ul li {
+        width:5em;
+    }
+}

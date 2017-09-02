@@ -4,3 +4,59 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*  apply a natural box layout model to all elements  */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+/*----------BODY-------------*/
+body{
+    font-size: 16px;
+    font-family: $defaultFont;
+}
+/*----------HEADER---------*/
+header{
+    padding:3em $gutter;
+    text-align:center;
+    background-color:$mainLightColor;
+    color:$defaultDark;
+    h1{
+        font-weight:$boldFont;
+        font-size: 1.5em;
+        
+    }
+    h2{
+        font-weight:$lightFont;
+        font-size: 1.1em;
+    }
+    
+}
+/*-----------NAV---------*/
+nav{
+    padding: 0 $gutter;
+    background-color:$defaultDark;
+    text-align:center;
+    ul li {
+        float:left;
+        width:33.33%;
+        a{
+            padding:.6em 0;
+            display:block;
+            color:$mainLightColor;
+            text-decoration:none;
+            transition: background-color .7s;
+            &:hover{
+                background-color:darken($defaultDark, 6%);
+            }
+            &.active{
+                background-color:darken($defaultDark, 10%);
+                
+            }
+        }
+
+    }
+}
+
+
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
