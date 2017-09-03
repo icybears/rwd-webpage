@@ -30,6 +30,8 @@ header {
     text-align: center;
     background-color: $mainLightColor;
     color: $defaultDark;
+    
+    z-index: 4;
     h1 {
         font-weight: $boldFont;
         font-size: 1.5em;
@@ -70,9 +72,10 @@ nav {
 /*------------MAIN--------*/
 
 main {
+    
     padding: 1em $gutter;
     position: relative;
-    z-index: 1;
+    z-index: -1;
     background-color: $defaultWhite;
     div#main-background {
         h1 {
