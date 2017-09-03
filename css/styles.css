@@ -62,7 +62,8 @@ body {
   font-size: 16px;
   font-family: "Encode Sans", sans-serif;
   z-index: -2;
-  background-color: black; }
+  background-color: black;
+  overflow-x: hidden; }
 
 /*----------HEADER---------*/
 header {
