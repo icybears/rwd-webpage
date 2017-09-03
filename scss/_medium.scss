@@ -20,6 +20,25 @@ main#blog{
         }
     }
 }
+/*------------MAIN/Gallery---------*/
+main#gallery{
+    background-color:darken($defaultWhite,2%);
+    position:relative;
+    height:100%;
+    div#main-background{
+        height:22%;
+        min-height:20em;
+    }
+    section#content{
+        margin-top:22em;
+        figure{
+            float:left;
+            width:33.33%;
+            padding:.7em;
+        }
+    }
+}
+
 /*-----------FOOOTER------------*/
 footer{
     padding-bottom:4em;
