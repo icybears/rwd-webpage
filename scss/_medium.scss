@@ -40,7 +40,28 @@ main#gallery{
         
     }
 }
-
+/*----------MAIN/CONTACT-------------*/
+main#contact{
+    div#main-background{
+        height:100%;
+        h1{
+            top:10%;
+        }
+    }
+    section#content{
+        margin-top:8em;
+        padding-bottom:2em;
+        form{
+            width:20em;
+            margin: 0 auto;
+        }
+    }
+    form{
+        label{
+            color:darken($defaultWhite,5%);
+        }
+    }
+}
 /*-----------FOOOTER------------*/
 footer{
     padding-bottom:4em;
