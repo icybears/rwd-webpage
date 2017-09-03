@@ -69,9 +69,9 @@ nav {
 }
 
 
-/*------------MAIN--------*/
+/*------------MAIN/BLOG/--------*/
 
-main {
+main#blog{
     
     padding: 1em $gutter;
     position: relative;
@@ -167,8 +167,14 @@ main {
         color: $mainDarkColor;
     }
 }
+/*--------------MAIN/GALLERY----------*/
+main#gallery{
 
-
+}
+/*-----------------MAIN/CONTACT----------*/
+main#content{
+    
+}
 /*---------------FOOOTER---------------*/
 
 footer {
