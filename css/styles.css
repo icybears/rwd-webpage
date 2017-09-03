@@ -69,12 +69,14 @@ body {
 header {
   padding: 1.5em 2em;
   text-align: center;
-  background-color: #ef3e3e;
-  color: #2c2c2c;
+  background-color: #1A1818;
+  color: #e4e4e4;
   z-index: 4; }
   header h1 {
     font-weight: 700;
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    color: #00a04d;
+    padding-bottom: .2em; }
   header h2 {
     font-weight: 400;
     font-size: 1.1em; }
@@ -90,13 +92,14 @@ nav {
     nav ul li a {
       padding: .6em 0;
       display: block;
-      color: #ef3e3e;
+      color: #e7e7e7;
       text-decoration: none;
       transition: background-color .7s; }
       nav ul li a:hover {
         background-color: #1d1d1d; }
       nav ul li a.active {
-        background-color: #131313; }
+        background-color: #131313;
+        color: #00a04d; }
 
 /*------------MAIN/BLOG/--------*/
 main#blog {
@@ -163,7 +166,6 @@ main#blog {
         margin-top: 1em;
         border: none;
         outline: none;
-        background-color: #9b0101;
         background-color: transparent;
         text-align: right; }
         main#blog section#content article div.read-more a {
@@ -179,8 +181,7 @@ main#blog {
       background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); }
     main#blog section#content h1 {
       text-align: center;
-      font-size: 1.5em;
-      color: #9b0101; }
+      font-size: 1.5em; }
 
 /*--------------MAIN/GALLERY----------*/
 main#gallery {
@@ -370,8 +371,10 @@ footer {
     padding: 1em 0;
     color: #e7e7e7;
     background-color: #1f1f1f; }
-    footer p span a {
-      color: inherit; }
+    footer p span {
+      color: #00a04d; }
+      footer p span a {
+        color: inherit; }
 
 .clearfix:after {
   content: "";
