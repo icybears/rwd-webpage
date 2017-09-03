@@ -85,6 +85,8 @@ main {
             position: absolute;
             top: 60%;
             left: 50%;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
             transform: translateX(-50%);
         }
         width: 100vw;
@@ -92,6 +94,7 @@ main {
         position: absolute;
         top: 0;
         left: 0;
+        background-color:$defaultDark; 
         background-image: url('http://oi67.tinypic.com/fdaxap.jpg');
         background-position: center;
         background-repeat: no-repeat;
@@ -200,6 +203,7 @@ footer {
         }
     }
     p{
+        box-shadow: 0 0 8px rgba(0,0,0,0.8);
         text-align:center;
         position: absolute;
         bottom:0;
