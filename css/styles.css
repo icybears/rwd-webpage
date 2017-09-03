@@ -63,7 +63,7 @@ body {
 
 /*----------HEADER---------*/
 header {
-  padding: 3em 2em;
+  padding: 1.5em 2em;
   text-align: center;
   background-color: #ef3e3e;
   color: #2c2c2c; }
@@ -71,7 +71,7 @@ header {
     font-weight: 700;
     font-size: 1.5em; }
   header h2 {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.1em; }
 
 /*-----------NAV---------*/
@@ -93,6 +93,87 @@ nav {
       nav ul li a.active {
         background-color: #131313; }
 
+/*------------MAIN--------*/
+main {
+  padding: 1em 2em;
+  position: relative;
+  z-index: 1;
+  background-color: #fbfbfb; }
+  main div#main-background {
+    width: 100vw;
+    height: 16em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("http://oi67.tinypic.com/fdaxap.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -1; }
+    main div#main-background h1 {
+      z-index: 5;
+      font-size: 2em;
+      color: #fbfbfb;
+      letter-spacing: .2em;
+      text-align: center;
+      font-family: "Droid Serif", serif;
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translateX(-50%); }
+    main div#main-background #overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: -1; }
+  main section#content {
+    z-index: 2;
+    padding: 0 .2em;
+    margin-top: 16em;
+    background-color: #fbfbfb; }
+    main section#content h1 {
+      margin-bottom: 4.25em; }
+    main section#content article {
+      padding: 1em 0; }
+      main section#content article h1 {
+        text-align: left;
+        color: #2c2c2c;
+        margin: 1.2em 0;
+        font-size: 1.5em;
+        font-weight: 700;
+        letter-spacing: .1em; }
+      main section#content article p {
+        text-align: left;
+        font-size: 1.1em;
+        letter-spacing: .1em;
+        line-height: 1.2em; }
+      main section#content article div.read-more {
+        margin-top: 1em;
+        border: none;
+        outline: none;
+        background-color: #9b0101;
+        background-color: transparent;
+        text-align: right; }
+        main section#content article div.read-more a {
+          text-decoration: underline;
+          color: inherit;
+          cursor: pointer; }
+  main hr {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); }
+  main h1 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #9b0101; }
+
 .clearfix:after {
   content: "";
   display: table;
@@ -101,12 +182,27 @@ nav {
 @media only screen and (min-width: 560px) {
   /*--------------HEADER---------------*/
   header {
-    text-align: left; } }
-@media only screen and (min-width: 1140px) {
+    text-align: left; }
+
+  /*-------------MAIN------------*/
+  main {
+    background-color: #f6f6f6; }
+    main div#main-background {
+      height: 22%;
+      min-height: 20em; }
+    main section#content {
+      padding: 2em 1em;
+      max-width: 60em;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.6); }
+      main section#content article {
+        padding: 0 1em; } }
+@media only screen and (min-width: 1025px) {
   /*------------NAV-------------*/
   nav {
     position: absolute;
-    top: 3em;
+    top: 1.5em;
     right: 2em;
     border-radius: 99px; }
     nav ul li {

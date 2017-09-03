@@ -2,3 +2,21 @@
 header{
     text-align:left;
 }
+/*-------------MAIN------------*/
+main{
+    background-color:darken($defaultWhite,2%);
+    div#main-background{
+        height:22%;
+        min-height:20em;
+    }
+    section#content{
+        padding:2em 1em;
+        max-width:60em;
+        margin-left:auto;
+        margin-right:auto;
+         box-shadow:0 0 5px rgba(0,0,0,0.6);
+        article{
+            padding:0 1em;
+        }
+    }
+}

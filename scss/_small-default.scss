@@ -1,62 +1,176 @@
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
 
 /*  apply a natural box layout model to all elements  */
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 
 /*----------BODY-------------*/
-body{
+
+body {
     font-size: 16px;
     font-family: $defaultFont;
 }
+
+
 /*----------HEADER---------*/
-header{
-    padding:3em $gutter;
-    text-align:center;
-    background-color:$mainLightColor;
-    color:$defaultDark;
-    h1{
-        font-weight:$boldFont;
+
+header {
+    padding: 1.5em $gutter;
+    text-align: center;
+    background-color: $mainLightColor;
+    color: $defaultDark;
+    h1 {
+        font-weight: $boldFont;
         font-size: 1.5em;
-        
     }
-    h2{
-        font-weight:$lightFont;
+    h2 {
+        font-weight: $lightFont;
         font-size: 1.1em;
     }
-    
 }
+
+
 /*-----------NAV---------*/
-nav{
+
+nav {
     padding: 0 $gutter;
-    background-color:$defaultDark;
-    text-align:center;
+    background-color: $defaultDark;
+    text-align: center;
     ul li {
-        float:left;
-        width:33.33%;
-        a{
-            padding:.6em 0;
-            display:block;
-            color:$mainLightColor;
-            text-decoration:none;
+        float: left;
+        width: 33.33%;
+        a {
+            padding: .6em 0;
+            display: block;
+            color: $mainLightColor;
+            text-decoration: none;
             transition: background-color .7s;
-            &:hover{
-                background-color:darken($defaultDark, 6%);
+            &:hover {
+                background-color: darken($defaultDark, 6%);
             }
-            &.active{
-                background-color:darken($defaultDark, 10%);
-                
+            &.active {
+                background-color: darken($defaultDark, 10%);
             }
         }
-
     }
 }
 
 
+/*------------MAIN--------*/
+
+main {
+    padding: 1em $gutter;
+    position: relative;
+    z-index: 1;
+    background-color: $defaultWhite;
+    div#main-background {
+        h1{
+            z-index: 5;
+            font-size: 2em;
+            color:$defaultWhite;
+            letter-spacing: .2em;
+            text-align:center;
+            font-family:$serifFont;
+            position: absolute;
+            top:60%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        width: 100vw;
+        height: 16em;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url('http://oi67.tinypic.com/fdaxap.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        z-index: -1;
+        #overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: -1;
+        }
+    }
+    section#content {
+        z-index: 2;
+        padding: 0 .2em;
+        margin-top: 16em; 
+        background-color:$defaultWhite;
+        h1 {
+            margin-bottom: 4.25em;
+            
+        }
+        article {
+            padding:1em 0;
+            h1 {
+                text-align:left;
+                color:$defaultDark;
+                margin: 1.2em 0;
+                font-size: 1.5em;
+                font-weight:$boldFont;
+                letter-spacing:.1em;
+            }
+            p {
+                text-align: left;
+                font-size: 1.1em;
+                letter-spacing:.1em;
+                line-height:1.2em;
+            }
+            div.read-more{
+                margin-top:1em;
+                border:none;
+                outline:none;
+                background-color:$mainDarkColor;
+                background-color:transparent;
+                text-align:right;
+                a{
+                    text-decoration:underline;
+                    color:inherit;
+                    // color:white;
+                    cursor:pointer;
+                    
+                }
+            }
+        }
+    
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5em;
+    color: $mainDarkColor;
+}
 
 
+}
 .clearfix:after {
     content: "";
     display: table;
     clear: both;
-  }
+}
